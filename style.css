@@ -17,6 +17,8 @@ body {
     height: 100vh;
 }
 
+/* HEADER //////////////////////////////////////////////////////////////////////////// */
+
 header {
     height: 80px;
 }
@@ -55,6 +57,11 @@ header {
     padding: 4px 10px;
 }
 
+.button:hover {
+    background-color: #c94b46;
+    cursor: pointer;
+}
+
 .button > svg {
     margin: auto 6px;
 }
@@ -71,4 +78,68 @@ header {
 
 #spacer {
     width: 30%
+}
+
+/* LANDING PAGE /////////////////////////////////////////////////////////////////// */
+
+.landing {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    max-width: 90%;
+    margin: auto;
+}
+
+.clockDisplay {
+    background-color: #df645f;
+    margin-top: 35px;
+    height: 130%;
+    border-radius: 7px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttonWrap {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.clockButton {
+    color: #fffcfc;
+    margin-right: 5%;
+    font-weight: 500;
+    padding: none;
+}
+
+.clockButton:hover {
+    background-color: #c94b46;
+    cursor: pointer;
+}
+
+.clock {
+    color: #fffcfc;
+    font-weight:500;
+    font-size: 700%;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#startButton {
+   background-color: #fffcfc;
+   width: 40%;
+   color: #df645f;
+   font-weight: 700;
+   text-align: center;
+   font-size: 170%;
+   padding-top: 10px;
+   margin: auto;
+   height: 10%;
+   border-radius: 5px;
+   box-shadow: 0px 7px #ebebeb;
 }
