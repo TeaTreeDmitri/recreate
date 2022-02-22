@@ -57,9 +57,18 @@ header {
     padding: 4px 10px;
 }
 
-.button:hover {
+.active {
     background-color: #c94b46;
     cursor: pointer;
+}
+
+.button:hover {
+    transform: translate(0, -2px);
+    cursor: pointer;
+}
+
+.button:active {
+    transform: translate(0, 4px);
 }
 
 .button > svg {
@@ -123,6 +132,11 @@ header {
 .clockButton:hover {
     background-color: #c94b46;
     cursor: pointer;
+    transform: translate(0, -2px);
+}
+
+.clockButton:active {
+    transform: translate(0, 4px);
 }
 
 .clock {
@@ -146,6 +160,18 @@ header {
    height: 10%;
    border-radius: 5px;
    box-shadow: 0px 7px #ebebeb;
+}
+
+#startButton:hover{
+    transform: translate(0px, -2px);
+    cursor: pointer;
+    box-shadow: 0px 9px #dad8d8;
+}
+
+#startButton:active {
+    transform: translate(0px, 6px);
+    box-shadow: 0px 2px #ebebeb;
+    font-size: 180%;
 }
 
 .currentJob {
@@ -276,6 +302,11 @@ header {
 
 /* content ///////////////////////////////////////////////////////////////////////////////// */
 
+em {
+    color:#db524d;
+    font-weight: 700;
+}
+
 .contentContainer {
     background-color: #ebebeb;
 }
@@ -314,7 +345,46 @@ li {
 
 footer {
     display: grid;
+    background-color: #ebebeb;
     grid-template-rows: repear(4, 1fr);
     height: 20%;
-    border: solid red 3px;
+    border-top: solid lightgrey 1px;
+    justify-content: center;
+}
+
+.footerlinks {
+    display: flex;
+    margin-top: 20px;
+}
+
+.footerlinks > a {
+    font-weight: 500;
+    color: #541c1f;
+    margin-right: 10px;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.icons > a {
+    color: rgb(117, 115, 115);
+    margin-right: 10px;
+}
+
+.author {
+    font-size: 90%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+aside {
+    text-align: center;
+    font-size: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(117, 115, 115);
 }
