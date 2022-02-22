@@ -102,7 +102,7 @@ header {
 .clockDisplay {
     background-color: #df645f;
     margin-top: 35px;
-    height: 80%;
+    min-height: 80%;
     border-radius: 7px;
     padding: 10px;
     display: flex;
