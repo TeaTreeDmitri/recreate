@@ -116,7 +116,6 @@ header {
     padding-top: 10px;
     padding-left: 5px;
     padding-right: 5px;
-    border: solid white 1px;
     border-radius: 4px;
     height: 50%;
 }
@@ -260,4 +259,62 @@ header {
     margin-top: 20px;
     height: 60px;
     display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#counter :nth-child(even) {
+    font-weight: 500;
+    color:#ebebeb;
+    font-size: 130%;
+}
+
+#counter :nth-child(odd) {
+    color: #f6c0be;
+    font-weight: 500;
+}
+
+/* content ///////////////////////////////////////////////////////////////////////////////// */
+
+.contentContainer {
+    background-color: #ebebeb;
+}
+
+.content {
+    background-color: #ebebeb;
+    color: #541c1f;
+    width: 50%;
+    padding: 5% 20% 5% 20%;
+    max-width: 62ch;
+    margin: auto;
+}
+
+.content > h1 {
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.content > h2 {
+    font-weight: 500;
+}
+
+p {
+    font-size: 90%;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 90%;
+}
+
+.lineBreak {
+    border-top: 4px solid #db524d;
+    width: 25px;
+}
+
+footer {
+    display: grid;
+    grid-template-rows: repear(4, 1fr);
+    height: 20%;
+    border: solid red 3px;
 }
