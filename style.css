@@ -97,12 +97,12 @@ header {
     grid-template-rows: 450px auto;
     max-width: 90%;
     margin: auto;
+    height: auto;
 }
 
 .clockDisplay {
     background-color: #df645f;
     margin-top: 35px;
-    min-height: 80%;
     border-radius: 7px;
     padding: 10px;
     display: flex;
