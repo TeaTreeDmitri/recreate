@@ -13,8 +13,8 @@ body {
 
 .wrapper {
     max-width: 60vw;
-    margin: 0 auto;
-    height: 100vh;
+    margin: 0 auto 50px auto;
+    min-height: 100vh;
 }
 
 /* HEADER //////////////////////////////////////////////////////////////////////////// */
@@ -97,7 +97,7 @@ header {
     grid-template-rows: 450px auto;
     max-width: 90%;
     margin: auto;
-    height: auto;
+    min-height: 100vh;
 }
 
 .clockDisplay {
@@ -251,8 +251,6 @@ header {
 #task2 > svg {
     color: #db524d 
 }
-
-
 
 #task2 {
     grid-row: 3;
