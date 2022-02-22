@@ -133,6 +133,7 @@ header {
     background-color: #c94b46;
     cursor: pointer;
     transform: translate(0, -2px);
+    border: #541c1f solid 1px;
 }
 
 .clockButton:active {
@@ -387,4 +388,10 @@ aside {
     margin-top: 10px;
     margin-bottom: 10px;
     color: rgb(117, 115, 115);
+}
+
+@media only screen and (max-width:900px) {
+    .button > span {
+        display: none;
+    }
 }
